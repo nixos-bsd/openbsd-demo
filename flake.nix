@@ -5,6 +5,7 @@
   outputs =
     { self, nixbsd }:
     {
+      outputs.packages.x86_64-openbsd.theSystem = self.nixosConfigurations.theSystem;
       nixosConfigurations.theSystem = nixbsd.lib.nixbsdSystem {
         system = "x86_64-openbsd";
         modules = [
