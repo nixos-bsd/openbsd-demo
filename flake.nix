@@ -15,6 +15,7 @@
               nixpkgs.hostPlatform = "x86_64-openbsd";
               nixpkgs.buildPlatform = "x86_64-linux";
               nixpkgs.fakeNative = true;
+              nixpkgs.overlays = [ (import ./overlay.nix) ];
 
               users.users.root.initialHashedPassword = "$2b$09$CexHNp84.dJLZv5oBcSBuO7zLdbAIBxyxiukAPwY3yKiH162s.GGW";
 
