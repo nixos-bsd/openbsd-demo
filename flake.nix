@@ -16,7 +16,7 @@
 
               fileSystems."/" = {
                 device = "/dev/sd0a";
-                fsType = "ufs";
+                fsType = "ffs";
               };
               fileSystems."/boot/efi" = {
                 device = "/dev/sd0i";
