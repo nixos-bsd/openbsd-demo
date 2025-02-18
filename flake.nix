@@ -20,7 +20,7 @@
               };
               fileSystems."/boot/efi" = {
                 device = "/dev/sd0i";
-                fsType = "msdosfs";
+                fsType = "msdos";
               };
             }
           )
