@@ -5,7 +5,7 @@
   outputs =
     { self, nixbsd }:
     {
-      packages.x86_64-linux.demo =
+      packages.x86_64-linux.demo-toplevel =
         (self.nixosConfigurations.demo.extendModules {
           modules = [
             {
