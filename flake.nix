@@ -14,7 +14,7 @@
           }
         ];
       };
-      installer = nixbsd.nixosConfigurations.openbsd-base;
+      installer = nixbsd.packages.x86_64-linux.openbsd-base;
     in
     {
       packages.x86_64-linux = {
