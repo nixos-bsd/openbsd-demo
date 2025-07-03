@@ -42,15 +42,15 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1739918924,
-        "narHash": "sha256-bZL/HCTYrNBrfkPG2uAxnVcBfndS8nzlh7+cU0yW8gY=",
-        "owner": "nixos-bsd",
+        "lastModified": 1742310851,
+        "narHash": "sha256-IMvfpjFdBLrxwjZSVUdbyAb0yWI2RVJRbKnJXfBWHN4=",
+        "owner": "obsidiansystems",
         "repo": "nixbsd",
-        "rev": "65f9fd8214f655e4ef23567c6f50a2d709fabf3c",
+        "rev": "1bb3957c7c3f959fd1feacc4673c6d85f57c1b72",
         "type": "github"
       },
       "original": {
-        "owner": "nixos-bsd",
+        "owner": "obsidiansystems",
         "ref": "openbsd-phase6",
         "repo": "nixbsd",
         "type": "github"
@@ -58,17 +58,17 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1739558165,
-        "narHash": "sha256-jPwGmVFVUJ5NXyWelUD3UlChl30TaMbSBv2RoqJNjQY=",
-        "owner": "nixos-bsd",
-        "repo": "nixpkgs",
-        "rev": "0ec59fa2cc288df216bbf7d28521f5db274696ba",
+        "lastModified": 1742073025,
+        "narHash": "sha256-Wwas3+i++d9sSJEU8f4py6R/OQbe79mqT1c/39gqqak=",
+        "owner": "obsidiansystems",
+        "repo": "bsd-nixpkgs",
+        "rev": "6af5d8f48e16d5fca6dfaa3d16f50d6e197b1f9c",
         "type": "github"
       },
       "original": {
-        "owner": "nixos-bsd",
-        "ref": "nixbsd-dev-new",
-        "repo": "nixpkgs",
+        "owner": "obsidiansystems",
+        "ref": "openbsd-phase6-v2",
+        "repo": "bsd-nixpkgs",
         "type": "github"
       }
     },
