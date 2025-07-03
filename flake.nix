@@ -4,9 +4,8 @@
   };
   outputs =
     { self, nixbsd }:
-    {
-      packages.x86_64-linux.demo-toplevel =
-        (self.nixosConfigurations.demo.extendModules {
+    let realCross = 
+        self.nixosConfigurations.demo.extendModules {
           modules = [
             {
               # fakeNative lets the OpenBSD system think it built the configuration itself.
@@ -14,7 +13,14 @@
               nixpkgs.fakeNative = false;
             }
           ];
-        }).config.system.build.toplevel;
+        };
+    in
+    {
+      packages.x86_64-linux = {
+        demo-toplevel = realCross.config.system.build.toplevel;
+        demo-vm = realCross.config.system.build.vm;
+        demo-image = realCross.config.system.build.systemImage;
+      };
       nixosConfigurations.demo = nixbsd.nixosConfigurations.openbsd-base.extendModules {
         modules = [
           (
