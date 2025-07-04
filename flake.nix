@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixbsd.url = "github:obsidiansystems/nixbsd/openbsd-phase6";
+    nixbsd.url = "github:obsidiansystems/nixbsd/9c0584fff8ae61946a46ab182148cf652559d364";
   };
   outputs =
     { self, nixbsd }:
